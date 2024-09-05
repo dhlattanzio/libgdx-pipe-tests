@@ -25,6 +25,7 @@ jobs:
           arch: x86_64
           profile: Nexus 6P
           emulator-options: "-no-window"
+          script: ./gradlew connectedCheck
 
       - name: Install APK
         run: adb install android-debug.apk
